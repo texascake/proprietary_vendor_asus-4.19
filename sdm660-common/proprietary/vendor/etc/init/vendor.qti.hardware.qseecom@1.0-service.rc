@@ -6,9 +6,9 @@
 #
 
 on init
-    start qseecom-service
+    start vendor.qseecom-service
 
-service qseecom-service /vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+service vendor.qseecom-service /vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
     class hal
     user system
     group system drmrpc
