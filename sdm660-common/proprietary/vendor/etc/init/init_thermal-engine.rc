@@ -7,7 +7,7 @@
 #Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
 #
 
-service vendor.thermal-engine /vendor/bin/thermal-engine
+service thermal-engine /vendor/bin/thermal-engine
 	class main
 	user root
 	group root
@@ -18,4 +18,4 @@ service vendor.thermal-engine /vendor/bin/thermal-engine
 	disabled
 
 on property:sys.boot_completed=1
-	restart vendor.thermal-engine
+	restart thermal-engine
